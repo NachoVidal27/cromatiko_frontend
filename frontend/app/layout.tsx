@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <nav className="relative w-full h-[10vh] pb-6 flex items-center bg-transparent">
-          <div className="pointer-events-none absolute top-0 left-0 w-full h-full bg-linear-to-b from-black/30 to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 w-full h-full bg-linear-to-b from-black-100/70 to-transparent" />
 
           <ul
             className={`${orbitron.className} relative flex justify-between items-center w-full px-16 font-bold text-black`}

@@ -19,6 +19,9 @@ module.exports = {
           deep: "#0D0000",
         },
       },
+      animation: {
+        breath: "breath 6s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
