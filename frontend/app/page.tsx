@@ -17,6 +17,7 @@ const inter = Inter({
 export default function Home() {
   return (
     <div className="">
+      {/* section A */}
       <div className="w-full h-[110vh]">
         <video
           src="/heroVideo.mp4"
@@ -27,7 +28,7 @@ export default function Home() {
         />
       </div>
       {/* section B */}
-      <div className="relative w-full h-[110vh] flex items-center justify-center overflow-hidden group bg-rogno-deep">
+      <div className="relative w-full h-[110vh] flex items-center justify-center overflow-hidden group bg-black">
         {/* Imagen */}
         <div
           className="
@@ -70,11 +71,11 @@ export default function Home() {
     group-hover:translate-x-0
   "
         >
-          <h2 className="text-6xl lg:text-8xl font-bold tracking-tight uppercase leading-none mb-4">
+          <h2 className="text-6xl lg:text-8xl font-bold tracking-tight uppercase leading-none mb-6">
             Matias Rognone
           </h2>
 
-          <div className="text-[1.5rem] space-y-4 mb-4">
+          <div className="text-[1.5rem] space-y-4 mb-6">
             <p>
               Diseñador gráfico uruguayo con +3 años creando identidades
               visuales estratégicas. Impulso marcas con diseño claro, creativo y
@@ -98,8 +99,13 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      {/* section C */}
-      <div className="relative w-full h-[110vh] bg-rogno-brown">
+      {/* {section C} */}
+      <div className="relative w-full h-[110vh] bg-white flex items-center justify-center text-black">
+        <h2>texto transición estamos laburando en ello xd</h2>
+      </div>
+
+      {/* section D */}
+      <div className="relative w-full h-[110vh] bg-black">
         <CursoCard
           imagePath="/extras/Recurso 5.png"
           CourseName="nacho"

@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import Button from "./Button";
+import { motion } from "framer-motion";
 
 interface CursoCardProps {
   imagePath: string;
@@ -33,8 +34,8 @@ interface CursoCardProps {
 function CursoCard2({
   imagePath,
   CourseName,
-  CourseDescription,
-}: CursoCardProps) {
+}: // CourseDescription,
+CursoCardProps) {
   return (
     <section className="relative bg-black text-white overflow-hidden">
       <div className="w-[90%] max-w-425 mx-auto pt-40 pb-12">
@@ -50,7 +51,7 @@ function CursoCard2({
       </div>
 
       {/* SECCIÓN CURSO */}
-      <div className="w-[90%] max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center gap-16 pb-40 border-t border-rogno-cream pt-24">
+      <div className="w-[90%] max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center gap-16 pb-40 border-t border-rogno-cream pt-6">
         {/* TEXTO */}
         <div className="lg:w-[35%] space-y-8 animate-fadeInUp delay-200">
           <h2 className="text-3xl md:text-4xl font-semibold uppercase tracking-wide">
@@ -78,18 +79,41 @@ function CursoCard2({
         </div>
 
         {/* IMAGEN */}
-        <div className="lg:w-[65%] relative h-[60vh] lg:h-[75vh] animate-fadeInRight delay-300">
-          {/* Overlay dramático */}
-          <div className="absolute inset-0 bg-linear-to-r from-black via-black/40 to-transparent z-10 pointer-events-none"></div>
 
-          {/* Imagen */}
-          <Image
-            src={imagePath}
-            alt={CourseName}
+        <div className="relative w-[80%] max-w-480 aspect-video">
+          {/* <Image
+            src="/extras/cerebro-clean.png"
+            alt="Master 4K Visual"
             fill
-            className="object-cover 6s ease-in-out infinite"
-            sizes="(max-width: 768px) 100vw, 65vw"
-          />
+            priority
+            className="object-contain"
+            sizes="100vw"
+          /> */}
+          <motion.div
+            animate={{
+              scale: [1, 1.02, 1],
+              filter: [
+                "brightness(0.9) drop-shadow(0 0 0px rgba(255,255,255,0))",
+                "brightness(1.08) drop-shadow(0 0 20px rgba(255,255,255,0.35))",
+                "brightness(0.9) drop-shadow(0 0 0px rgba(255,255,255,0))",
+              ],
+            }}
+            transition={{
+              duration: 6.2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="relative w-[80vw] h-[80vh]"
+          >
+            <Image
+              src="/extras/cerebro-clean.png"
+              alt="Master 4K Visual"
+              fill
+              priority
+              className="object-contain"
+              sizes="100vw"
+            />
+          </motion.div>
         </div>
       </div>
     </section>
