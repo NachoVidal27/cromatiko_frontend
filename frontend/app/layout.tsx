@@ -28,7 +28,7 @@ export default function RootLayout({
           >
             <li>Menu</li>
             <Link href={"/"}>
-              <li className="text-[1.5rem]">Cromatiko</li>
+              <li className="text-[1.5rem]">Cromanet</li>
             </Link>
 
             <li>User</li>

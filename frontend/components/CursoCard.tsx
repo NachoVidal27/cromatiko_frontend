@@ -41,7 +41,7 @@ CursoCardProps) {
       <div className="w-[90%] max-w-425 mx-auto pt-40 pb-12">
         <div className="space-y-6 animate-fadeInUp">
           <h2 className="text-6xl md:text-8xl font-bold tracking-tight uppercase leading-none">
-            CROMATIKO<span className="text-red-600">.</span>
+            CROMANET<span className="text-red-600">.</span>
           </h2>
 
           <p className="text-lg md:text-xl text-white/60 tracking-wide uppercase">
@@ -103,7 +103,7 @@ CursoCardProps) {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="relative w-[80vw] h-[80vh]"
+            className="relative w-[70vw] h-[70vh]"
           >
             <Image
               src="/extras/cerebro-clean.png"

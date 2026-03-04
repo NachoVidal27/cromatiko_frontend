@@ -17,6 +17,7 @@ module.exports = {
           brown: "#A68365",
           beige: "#D9AE89",
           deep: "#0D0000",
+          gray: "text-white/60"
         },
       },
       animation: {
